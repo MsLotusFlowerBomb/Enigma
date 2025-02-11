@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .header {
     position: relative;
     width: 100vw;
@@ -91,4 +92,99 @@ h2 {
 
 .social-icons a:hover {
     color: #007bff; /* Bootstrap primary color */
+=======
+.header {
+    position: relative;
+    width: 100vw;
+    height: 300px;
+
+}
+.header .center {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+
+}
+.header .scroll {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 1.5rem;
+}
+@media (min-width: 992px) {
+    .header .center {
+        width: 50%;
+    }
+    .header .left, .header .right {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 40%;
+        height: 40%;
+        transform: translate(0, 0);
+        padding: 1rem;
+    }
+    .header .right {
+        left: 50%;
+    }
+}
+#header4 {
+    background: #355c7d;
+    background: linear-gradient(rgba(53, 92, 125, 0.8), rgba(108, 91, 123, 0.8), rgba(192, 108, 123, 0.8)), url('/Assets/EnigmaLogo2.jpg'), no-repeat center top;
+    background-size: auto ;
+    z-index: 0; /* bottom layout */
+}
+
+h2 {
+    font-family: 'Enigma',serif;
+    src: url('Assets/Enigma.otf');
+    font-size: 35px;
+    font-weight: 1000;
+    color: rgba(37, 21, 54, 0.8);
+    text-align-last: center;
+
+}
+/*Styling for nested recent articles */
+
+.gradient {
+    background-image: linear-gradient(90deg, #adadba 0%, #ab9ea4 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    animation: move 1s infinite;
+}
+
+@keyframes move {
+    50% {
+        background-image: linear-gradient(90deg, #adabac 0%, #000066 100%);
+    }
+}
+
+/* custom buttons styling */
+.custom-button {
+    background-color: rgba(215, 205, 206, 0.5); /* Pastel pink with transparency */
+    border: 3px solid #ffc0cb; /* Solid pastel pink border */
+    border-radius: 50px; /* Rounded edges */
+    color: #221f1f; /* Pastel pink text color */
+}
+
+.custom-button:hover {
+    background-color: #ffc0cb; /* Solid pastel pink on hover */
+    color: white; /* Change text color on hover for better visibility */
+}
+
+/*Footer styling */
+
+.social-icons a {
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Bootstrap primary color */
+>>>>>>> master
 }
